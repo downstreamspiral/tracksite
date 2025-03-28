@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeypot Tracking Dashboard</title>
+    <link rel="stylesheet" href="/tracking/public/track.css">
+</head>
+
+<body>
+    <header>
+        <h1>Honeypot Tracking Dashboard</h1>
+        <p>Monitor potential intruders and suspicious activities</p>
+    </header>
+    <main>
+        <section>
+            <h2>IP Address Information</h2>
+            <table id="ipTable">
+                <thead>
+                    <tr>
+                        <th>Serial Number</th>
+                        <th>IP Address</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated here -->
+                </tbody>
+            </table>
+
+            <button onclick="fetchData()">Update Table</button>
+        </section>
+        <section>
+            <h2>Visitor Information</h2>
+            <p>IP Address: <span id="ip"></span></p>
+            <p>Country: <span id="country"></span></p>
+            <p>Region: <span id="region"></span></p>
+            <p>City: <span id="city"></span></p>
+            <p>ISP: <span id="isp"></span></p>
+            <p>User Agent: <span id="userAgent"></span></p>
+            <p>Browser: <span id="browser"></span></p>
+            <p>Operating System: <span id="os"></span></p>
+        </section>
+        <section>
+            <h2>System Details</h2>
+            <p>Device Type: <span id="deviceType"></span></p>
+            <p>Screen Resolution: <span id="screenResolution"></span></p>
+            <p>Languages: <span id="languages"></span></p>
+            <p>Timezone: <span id="timezone"></span></p>
+            <p>Battery Level: <span id="battery"></span></p>
+        </section>
+        <section>
+            <h2>Network and Connectivity</h2>
+            <p>Connection Type: <span id="connectionType"></span></p>
+            <p>Public IP: <span id="publicIP"></span></p>
+            <p>Internal IP: <span id="internalIP"></span></p>
+            <p>Proxy/VPN: <span id="proxy"></span></p>
+        </section>
+        <section>
+            <h2>Browser Fingerprinting</h2>
+            <p>Canvas Fingerprint: <span id="canvasFingerprint"></span></p>
+            <p>Audio Fingerprint: <span id="audioFingerprint"></span></p>
+            <p>WebGL Fingerprint: <span id="webglFingerprint"></span></p>
+            <p>Fonts: <span id="fonts"></span></p>
+        </section>
+        <section>
+            <h2>Activity Logs</h2>
+            <p>SQL Injection Attempts: <span id="sqlInjection"></span></p>
+            <p>XSS Attempts: <span id="xssAttempts"></span></p>
+            <p>Suspicious Requests: <span id="suspiciousRequests"></span></p>
+            <p>Malware Downloads: <span id="malwareDownloads"></span></p>
+        </section>
+    </main>
+
+    <script src="table.js"></script>
+</body>
+
+</html>
