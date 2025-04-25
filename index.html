@@ -33,15 +33,36 @@
         </section>
         <section>
             <h2>Visitor Information</h2>
+
+            <p>Visitor Found: <span id="vis-found"></span></p> 
+            <p>Visitor Id: <span id="vis-id"></span></p>
+
             <p>IP Address: <span id="ip"></span></p>
             <p>Country: <span id="country"></span></p>
             <p>Region: <span id="region"></span></p>
             <p>City: <span id="city"></span></p>
+            <p>Latitude: <span id="lat"></span></p>
+            <p>Longtitude: <span id="lon"></span></p>
+            <p>Organization: <span id="org"></span></p>
+
             <p>ISP: <span id="isp"></span></p>
-            <p>User Agent: <span id="userAgent"></span></p>
+            <p>Cellular Connection?: <span id="cell"></span></p>
+            <!-- <p>User Agent: <span id="userAgent"></span></p> -->
             <p>Browser: <span id="browser"></span></p>
+            <p>Incognito: <span id="incog"></span></p>
+            <p>Using Proxies?: <span id="prox"></span></p>
+
+            <p>Browser Version: <span id="brow-ver"></span></p>
             <p>Operating System: <span id="os"></span></p>
+            <p>Operating System Version: <span id="os-ver"></span></p>
+            <p>First Seen: <span id="firstseen"></span></p>
+            <p>Last Seen: <span id="lastseen"></span></p>
+            <!-- <p>Confidence Score: <span id="con-score"></span></p> -->
+
+
         </section>
+
+<!--         
         <section>
             <h2>System Details</h2>
             <p>Device Type: <span id="deviceType"></span></p>
@@ -70,10 +91,11 @@
             <p>XSS Attempts: <span id="xssAttempts"></span></p>
             <p>Suspicious Requests: <span id="suspiciousRequests"></span></p>
             <p>Malware Downloads: <span id="malwareDownloads"></span></p>
-        </section>
+        </section> -->
     </main>
 
-    <script src="/public/table.js"></script>
+    <!-- <script src="/public/table.js"></script> -->
+    <script src="backend.js" defer></script>
 </body>
 
 </html>
